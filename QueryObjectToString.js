@@ -13,3 +13,7 @@ const shoes = {
     color:"blue" 
 }
 console.log(queryObjectToString(shoes)); //output： “?size=0&gender=male&color=blue”
+
+const ObjToStr = obj => {
+  return Object.keys(obj).reduce((a,b) => a + b + "=" + obj[b] + "&", "?").slice(0, -1)
+}
