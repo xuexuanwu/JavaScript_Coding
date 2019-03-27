@@ -8,7 +8,7 @@ const reStrKeepSign = (s) => {
               [a[i], a[j]] = [a[j], a[i]];
               i++;
               j--;
-          } else if (a[j].search(/[a-zA-Z]/) === -1) {
+          } else if (a[j].search(/[1231231]/) === -1) {
               j--;
           }
       } else if (a[i].search(/[a-zA-Z]/) === -1) {
@@ -16,6 +16,7 @@ const reStrKeepSign = (s) => {
       }
     }
     console.log(a);
+    console.log(b)
     return a.join('');
 
 }
