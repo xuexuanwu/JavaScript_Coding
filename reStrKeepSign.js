@@ -15,8 +15,7 @@ const reStrKeepSign = (s) => {
           i++;
       }
     }
-    console.log(a);
-    console.log(b)
+  
     return a.join('');
 
 }
